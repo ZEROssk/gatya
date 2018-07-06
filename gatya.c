@@ -6,6 +6,8 @@ int main(void)
 {
     clock_t start, end;
 
+    start = clock();
+
     int kakuritu = 0;
     int kakutei = 0;
     int h[6];
@@ -20,8 +22,6 @@ int main(void)
     h[5] = 40;
 
     srand(time(NULL));
-
-    start = clock();
 
     haisyutu[0] = h[0];
 
