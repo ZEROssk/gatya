@@ -36,7 +36,7 @@ int main(void)
         for (int i = 0; i < 10; i++)
         {
             kakuritu = rand() % 100;
-            if (kakuritu <= haisyutu[0])
+            if (kakuritu <= haisyutu[0])    //星５鯖の排出処理
             {
                 printf("┏━━━━━━━━┓\n");
                 printf("┃ 星５鯖 ┃ ");
@@ -145,7 +145,7 @@ int main(void)
                 printf("┗━━━━━━━━┛\n");
                 kakutei = kakutei + 1;
                 gosaba = gosaba + 1;
-            } else if (kakuritu <= haisyutu[1]) {
+            } else if (kakuritu <= haisyutu[1]) {   //星４鯖の排出処理
                 printf("  星４鯖");
                 //48
                 nameselectyon = rand() % 48;
@@ -343,7 +343,7 @@ int main(void)
                 }
                 kakutei = kakutei + 1;
                 yonsaba = yonsaba + 1;
-            } else if (kakuritu <= haisyutu[2]) {
+            } else if (kakuritu <= haisyutu[2]) {   //星５礼装の排出処理
                 printf("┏━━━━━━━━━━┓\n");
                 printf("┃ 星５礼装 ┃");
                 //18
@@ -423,7 +423,7 @@ int main(void)
                 printf("┗━━━━━━━━━━┛\n");
                 kakutei = kakutei + 1;
                 goreisou = goreisou + 1;
-            } else if (kakuritu <= haisyutu[3]) {
+            } else if (kakuritu <= haisyutu[3]) {   //星４礼装排出処理
                 printf("  星４礼装　");
                 //26
                 nameselectyonr = rand() % 26;
@@ -533,7 +533,7 @@ int main(void)
                 }
                 kakutei = kakutei + 1;
                 yonreisou = yonreisou + 1;
-            } else if (kakuritu <= haisyutu[4]) {
+            } else if (kakuritu <= haisyutu[4]) {   //星３鯖排出処理
                 printf("  星３鯖　　");
                 //37
                 nameselectsan = rand() % 37;
@@ -687,7 +687,7 @@ int main(void)
                 }
                 kakutei = kakutei + 1;
                 sansaba = sansaba + 1;
-            } else if (kakuritu <= haisyutu[5]) {
+            } else if (kakuritu <= haisyutu[5]) {   //星３礼装排出処理
                 printf("  星３礼装　");
                 //22
                 nameselectsanr = rand() % 22;
