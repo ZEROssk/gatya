@@ -39,7 +39,7 @@ int main(void)
             if (kakuritu <= haisyutu[0])
             {
                 printf("┏━━━━━━━━┓\n");
-                printf("┃ 星５鯖 ┃");
+                printf("┃ 星５鯖 ┃ ");
                 //25
                 nameselectgo = rand() % 25;
                 if (nameselectgo == 0)
@@ -424,7 +424,7 @@ int main(void)
                 kakutei = kakutei + 1;
                 goreisou = goreisou + 1;
             } else if (kakuritu <= haisyutu[3]) {
-                printf("  星４礼装");
+                printf("  星４礼装　");
                 //26
                 nameselectyonr = rand() % 26;
                 if (nameselectyonr == 0)
@@ -534,7 +534,7 @@ int main(void)
                 kakutei = kakutei + 1;
                 yonreisou = yonreisou + 1;
             } else if (kakuritu <= haisyutu[4]) {
-                printf("  星３鯖");
+                printf("  星３鯖　　");
                 //37
                 nameselectsan = rand() % 37;
                 if (nameselectsan == 0)
@@ -688,7 +688,7 @@ int main(void)
                 kakutei = kakutei + 1;
                 sansaba = sansaba + 1;
             } else if (kakuritu <= haisyutu[5]) {
-                printf("  星３礼装");
+                printf("  星３礼装　");
                 //22
                 nameselectsanr = rand() % 22;
                 if (nameselectsanr == 0)
