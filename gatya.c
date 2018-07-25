@@ -12,8 +12,11 @@ int main(void)
     int kakutei = 0;
     int h[6];
     int haisyutu[6];
-    int gosaba = 0, yonsaba = 0, sansaba = 0, goreisou = 0, yonreisou = 0, sanreisou = 0;
-    int nameselectgo, nameselectgor, nameselectyon, nameselectyonr, nameselectsan, nameselectsanr;
+    int gosaba = 0, yonsaba = 0, sansaba = 0;
+    int goreisou = 0, yonreisou = 0, sanreisou = 0;
+    int nameselectgo, nameselectyon, nameselectsan;
+    int nameselectgor, nameselectyonr, nameselectsanr;
+
     h[0] = 1;
     h[1] = 3;
     h[2] = 4;
@@ -41,7 +44,7 @@ int main(void)
                 printf("┏━━━━━━━━┓\n");
                 printf("┃ 星５鯖 ┃ ");
                 //25
-                nameselectgo = rand() % 25;
+                nameselectgo = rand() % 25;     //星５鯖の個別選択
                 if (nameselectgo == 0)
                 {
                     printf(" アルトリア・ペンドラゴン\n");
@@ -146,9 +149,9 @@ int main(void)
                 kakutei = kakutei + 1;
                 gosaba = gosaba + 1;
             } else if (kakuritu <= haisyutu[1]) {   //星４鯖の排出処理
-                printf("  星４鯖");
+                printf("  星４鯖　　");
                 //48
-                nameselectyon = rand() % 48;
+                nameselectyon = rand() % 48;        //星４鯖の個別選択
                 if (nameselectyon == 0)
                 {
                     printf(" アルトリア・ペンドラゴン[オルタ]\n");
@@ -347,7 +350,7 @@ int main(void)
                 printf("┏━━━━━━━━━━┓\n");
                 printf("┃ 星５礼装 ┃");
                 //18
-                nameselectgor = rand() % 18;
+                nameselectgor = rand() % 18;        //星５礼装の個別選択
                 if (nameselectgor == 0)
                 {
                     printf(" フォーマルクラフト\n");
@@ -426,7 +429,7 @@ int main(void)
             } else if (kakuritu <= haisyutu[3]) {   //星４礼装排出処理
                 printf("  星４礼装　");
                 //26
-                nameselectyonr = rand() % 26;
+                nameselectyonr = rand() % 26;       //星４礼装の個別選択
                 if (nameselectyonr == 0)
                 {
                     printf(" 鋼の鍛錬\n");
@@ -536,7 +539,7 @@ int main(void)
             } else if (kakuritu <= haisyutu[4]) {   //星３鯖排出処理
                 printf("  星３鯖　　");
                 //37
-                nameselectsan = rand() % 37;
+                nameselectsan = rand() % 37;        //星３鯖の個別選択
                 if (nameselectsan == 0)
                 {
                     printf(" ベディヴィエール\n");
@@ -690,7 +693,7 @@ int main(void)
             } else if (kakuritu <= haisyutu[5]) {   //星３礼装排出処理
                 printf("  星３礼装　");
                 //22
-                nameselectsanr = rand() % 22;
+                nameselectsanr = rand() % 22;       //星３礼装の個別選択
                 if (nameselectsanr == 0)
                 {
                     printf(" 柳洞寺\n");
@@ -784,6 +787,7 @@ int main(void)
         }
     }
 
+/*  ガチャ結果を種類ごとに枚数表示  */
     printf("\n┏ ガチャ結果━━━┓\n");
     printf("┃ 星５鯖　　%d枚┃\n", gosaba);
     printf("┃ 星４鯖　　%d枚┃\n", yonsaba);

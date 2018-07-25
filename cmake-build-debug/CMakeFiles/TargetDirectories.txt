@@ -1,0 +1,3 @@
+/Users/zero/Documents/GitHub/ZEROssk.github.io/gatya/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/zero/Documents/GitHub/ZEROssk.github.io/gatya/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/zero/Documents/GitHub/ZEROssk.github.io/gatya/cmake-build-debug/CMakeFiles/gatya.dir

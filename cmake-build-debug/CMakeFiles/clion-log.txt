@@ -1,0 +1,11 @@
+/private/var/folders/71/2t8s5hjx3_lf7d0ydmh_12y00000gn/T/AppTranslocation/F9C32983-D71F-4A30-BC5F-0A916EE675BE/d/CLion.app/Contents/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/zero/Documents/GitHub/ZEROssk.github.io/gatya
+-- The C compiler identification is AppleClang 9.1.0.9020039
+-- Check for working C compiler: /Library/Developer/CommandLineTools/usr/bin/cc
+-- Check for working C compiler: /Library/Developer/CommandLineTools/usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/zero/Documents/GitHub/ZEROssk.github.io/gatya/cmake-build-debug

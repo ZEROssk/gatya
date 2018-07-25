@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/zero/Documents/GitHub/ZEROssk.github.io/gatya/gatya.c
+stdio.h
+-
+stdlib.h
+-
+time.h
+-
+
