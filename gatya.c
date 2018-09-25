@@ -86,7 +86,7 @@ int main(void)
             {
                 int min = 74,max = 110;
                 nameselectthree = GetRandom(min, max); //星３鯖の個別選択 74~110
-                printf("  星３鯖　　%s\n", GetServantName(nameselectthree));
+                printf("  星３鯖　　 %s\n", GetServantName(nameselectthree));
                 confirm = confirm + 1;
                 sabathree = sabathree + 1;
             }
@@ -106,12 +106,6 @@ int main(void)
     printf("┃ 星４鯖　%d枚  星４礼装　%d枚 ┃\n", sabafor, forblacktie);
     printf("┃ 星３鯖　%d枚  星３礼装　%d枚 ┃\n", sabathree, threeblacktie);
     printf("┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛");
-    /*
-    printf("┃ 星５礼装　%d枚┃\n", fiveblacktie);
-    printf("┃ 星４礼装　%d枚┃\n", forblacktie);
-    printf("┃ 星３礼装　%d枚┃\n", threeblacktie);
-    printf("┗━━━━━━━━━━━━━━┛");
-    */
 
     end = clock();
     printf("\n処理時間%lu[ms]\n", end - start);
