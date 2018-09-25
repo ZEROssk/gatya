@@ -8,6 +8,8 @@ const char* GetServantName (eRANK_TYPE rank)
     return strServantNames[rank];
 }
 
+int GetRandom(int, int);
+
 int main(void)
 {
     clock_t start, end;
@@ -46,7 +48,7 @@ int main(void)
             {
                 printf("┏━━━━━━━━┓\n");
                 printf("┃ 星５鯖 ┃ ");
-                nameselectfive = rand() % 25; //星５鯖の個別選択
+                nameselectfive = rand() % 25; //星５鯖の個別選択 0~25
                 printf(" %s\n", GetServantName(nameselectfive));
                 printf("┗━━━━━━━━┛\n");
                 confirm = confirm + 1;
@@ -55,7 +57,8 @@ int main(void)
             else if (probability <= haisyutu[1]) //星４鯖の排出処理
             {
                 printf("  星４鯖　　");
-                nameselectfor = rand() % 48; //星４鯖の個別選択
+                int min = 25,max = 73;
+                nameselectfor = GetRandom(min, max); //星４鯖の個別選択 25~73
                 printf(" %s\n", GetServantName(nameselectfor));
                 confirm = confirm + 1;
                 sabafor = sabafor + 1;
@@ -64,7 +67,8 @@ int main(void)
             {
                 printf("┏━━━━━━━━━━┓\n");
                 printf("┃ 星５礼装 ┃");
-                nameselectfiver = rand() % 18; //星５礼装の個別選択
+                int min = 111, max = 129;
+                nameselectfiver = GetRandom(min, max); //星５礼装の個別選択 111~129
                 printf(" %s\n", GetServantName(nameselectfiver));
                 printf("┗━━━━━━━━━━┛\n");
                 confirm = confirm + 1;
@@ -73,7 +77,8 @@ int main(void)
             else if (probability <= haisyutu[3]) //星４礼装排出処理
             {
                 printf("  星４礼装　");
-                nameselectforr = rand() % 26; //星４礼装の個別選択
+                int min = 129, max = 155;
+                nameselectforr = GetRandom(min, max); //星４礼装の個別選択 129~155
                 printf(" %s\n", GetServantName(nameselectforr));
                 confirm = confirm + 1;
                 forblacktie = forblacktie + 1;
@@ -81,7 +86,8 @@ int main(void)
             else if (probability <= haisyutu[4]) //星３鯖排出処理
             {
                 printf("  星３鯖　　");
-                nameselectthree = rand() % 37; //星３鯖の個別選択
+                int min = 74,max = 110;
+                nameselectthree = GetRandom(min, max); //星３鯖の個別選択 74~110
                 printf(" %s\n", GetServantName(nameselectthree));
                 confirm = confirm + 1;
                 sabathree = sabathree + 1;
@@ -89,7 +95,8 @@ int main(void)
             else if (probability <= haisyutu[5]) //星３礼装排出処理
             {
                 printf("  星３礼装　");
-                nameselectthreer = rand() % 22; //星３礼装の個別選択
+                int min = 155, max = 177;
+                nameselectthreer = GetRandom(min, max); //星３礼装の個別選択 155~177
                 printf(" %s\n", GetServantName(nameselectthreer));
                 threeblacktie = threeblacktie + 1;
             }
@@ -110,4 +117,9 @@ int main(void)
     printf("\n処理時間%lu[ms]\n", end - start);
 
     return 0;
+}
+
+int GetRandom(int min, int max)
+{
+    return min + (int)(rand()*(max-min+1.0)/(1.0+RAND_MAX));
 }
