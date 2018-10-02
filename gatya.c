@@ -15,7 +15,7 @@ int main(void)
     clock_t start, end;
     start = clock();
 
-    int probability = 0,confirm = 0;
+    int probability = 0,confirm = 0,confirms = 0;
     int h[] = {
         1,
         3,
@@ -40,7 +40,7 @@ int main(void)
         haisyutu[x] = haisyutu[x - 1] + h[x];
     }
 
-    while (confirm == 0)
+    while (confirm == 0 && confirms == 0)
     {
         printf("\n10連ガチャ\n");
         printf("\n");
@@ -53,6 +53,7 @@ int main(void)
                 printf("┏━━━━━━━━┓\n");
                 printf("┃ 星５鯖 ┃  %s\n", GetServantName(nameselectfive));
                 printf("┗━━━━━━━━┛\n");
+                confirms = confirms + 1;
                 confirm = confirm + 1;
                 sabafive = sabafive + 1;
             }
@@ -61,6 +62,7 @@ int main(void)
                 int min = 25,max = 72;
                 nameselectfor = GetRandom(min, max); //星４鯖の個別選択 25~73
                 printf("  星４鯖　　 %s\n", GetServantName(nameselectfor));
+                confirms = confirms + 1;
                 confirm = confirm + 1;
                 sabafor = sabafor + 1;
             }
@@ -87,7 +89,7 @@ int main(void)
                 int min = 73,max = 109;
                 nameselectthree = GetRandom(min, max); //星３鯖の個別選択 74~110
                 printf("  星３鯖　　 %s\n", GetServantName(nameselectthree));
-                confirm = confirm + 1;
+                confirms = confirms + 1;
                 sabathree = sabathree + 1;
             }
             else if (probability <= haisyutu[5]) //星３礼装排出処理
