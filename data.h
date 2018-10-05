@@ -30,10 +30,11 @@ typedef enum {
     eRANK_FIVE_SERVANT_END,
     eRANK_FIVE_SERVANT_MAX = eRANK_FIVE_SERVANT_END,
 
-    //星４鯖 50
+    //星４鯖 54
     eRANK_FOR_SERVANT_BEGIN = eRANK_FIVE_SERVANT_MAX,
     eRANK_FOR_SERVANT_ALTRIAPENDRAGONORUTA = eRANK_FOR_SERVANT_BEGIN,
     eRANK_FOR_SERVANT_NRO,
+    eRANK_FOR_SERVANT_EMIYAORUTA,
     eRANK_FOR_SERVANT_GAWEIN,
     eRANK_FOR_SERVANT_ZIIKU,
     eRANK_FOR_SERVANT_RARMA,
@@ -82,12 +83,16 @@ typedef enum {
     eRANK_FOR_SERVANT_ATALANTE_OORTA,
     eRANK_FOR_SERVANT_GORGON,
     eRANK_FOR_SERVANT_AVENGER_OF_SHINJUKU,
+    eRANK_FOR_SERVANT_YAGYUU,
+    eRANK_FOR_SERVANT_KATOUDANNZOU,
+    eRANK_FOR_SERVANT_MIDORA_SYUNOKYASUTA
     eRANK_FOR_SERVANT_END,
     eRANK_FOR_SERVANT_MAX = eRANK_FOR_SERVANT_END - eRANK_FOR_SERVANT_BEGIN,
 
-    //星３鯖 37
+    //星３鯖 39
     eRANK_THREE_SERVANT_BEGIN = eRANK_FOR_SERVANT_END,
     eRANK_THREE_SERVANT_BEDIVIERE = eRANK_THREE_SERVANT_BEGIN,
+    eRANK_THREE_SERVANT_ANNTONIOSARIERI,
     eRANK_THREE_SERVANT_GAIUS_JULIUS_CAESAR,
     eRANK_THREE_SERVANT_FERGUS_MAC_ROY,
     eRANK_THREE_SERVANT_JILL_DE_LE,
@@ -124,6 +129,7 @@ typedef enum {
     eRANK_THREE_SERVANT_ROHU,
     eRANK_THREE_SERVANT_DARIOS_III,
     eRANK_THREE_SERVANT_KIYOHIME,
+    eRANK_THREE_SERVANT_REZISUTANSUNORAIDER,
     eRANK_THREE_SERVANT_END,
     eRANK_THREE_SERVANT_MAX = eRANK_THREE_SERVANT_END - eRANK_THREE_SERVANT_BEGIN,
 
@@ -151,7 +157,7 @@ typedef enum {
     eRANK_FIVE_REISOU_END,
     eRANK_FIVE_REISOU_MAX = eRANK_FIVE_REISOU_END - eRANK_FIVE_REISOU_BEGIN,
 
-    //星４礼装 26
+    //星４礼装 29
     eRANK_FOR_REISOU_BEGIN = eRANK_FIVE_REISOU_END,
     eRANK_FOR_REISOU_STEEL_TRAINING = eRANK_FOR_REISOU_BEGIN,
     eRANK_FOR_REISOU_PRIMITIVE_SPELL,
@@ -179,10 +185,13 @@ typedef enum {
     eRANK_FOR_REISOU_AIDING_SHOOTING,
     eRANK_FOR_REISOU_ROOM_GIRDER,
     eRANK_FOR_REISOU_THE_LAST_STORYTELLER,
+    eRANK_FOR_REISOU_SUIPER,
+    eRANK_FOR_REISOU_ITANNNOYAGA,
+    eRANK_FOR_REISOU_HANAZONONOSYOUZYO,
     eRANK_FOR_REISOU_END,
     eRANK_FOR_REISOU_MAX = eRANK_FOR_REISOU_END - eRANK_FOR_REISOU_BEGIN,
 
-    //星３礼装 22
+    //星３礼装 23
     eRANK_THREE_REISOU_BEGIN = eRANK_FOR_REISOU_END,
     eRANK_THREE_REISOU_TEMPLE = eRANK_FOR_REISOU_BEGIN,
     eRANK_THREE_REISOU_LOVE_MEDICINE,
@@ -206,6 +215,7 @@ typedef enum {
     eRANK_THREE_REISOU_GOD_SHELLING_ARMOR,
     eRANK_THREE_REISOU_EATING_SOUL,
     eRANK_THREE_REISOU_WISDOM_LIGHT,
+    eRANK_THREE_REISOU_SAKURANOTOKUSEIBENNTOU,
     eRANK_THREE_REISOU_END,
     eRANK_THREE_REISOU_MAX = eRANK_THREE_REISOU_END - eRANK_THREE_REISOU_BEGIN,
     eRANK_TOTAL = eRANK_FOR_SERVANT_END,
@@ -240,7 +250,8 @@ typedef enum {
     "クー・フーリン[オルタ]",
     "ジャンヌ・ダルク",
 
-    //星４鯖 50
+    //星４鯖 54
+    "エミヤ[オルタ]",
     "アルトリア・ペンドラゴン[オルタ]",
     "ネロ・クラウディウス",
     "ガウェイン",
@@ -291,8 +302,12 @@ typedef enum {
     "アタランテ[オルタ]",
     "ゴルゴーン",
     "新宿のアヴェンジャー",
+    "柳生但馬守宗矩",
+    "加藤段蔵",
+    "ミドラーシュのキャスター",
 
-    //星３鯖 37
+    //星３鯖 39
+    "アントニオ・サリエリ",
     "ベディヴィエール",
     "ガイウス・ユリウス・カエサル",
     "フェルグス・マック・ロイ",
@@ -330,6 +345,7 @@ typedef enum {
     "呂布奉先",
     "ダレイオス三世",
     "清姫",
+    "レジスタンスのライダー",
 
     //星５礼装 19
     "フォーマルクラフト",
@@ -352,7 +368,7 @@ typedef enum {
     "陽だまりの中で",
     "アトラスの嬰児",
 
-    //星４礼装 26
+    //星４礼装 29
     "鋼の鍛錬",
     "原始呪術",
     "投影魔術",
@@ -379,8 +395,11 @@ typedef enum {
     "援護射撃",
     "ルームガーダー",
     "最後の語り部",
+    "スイーパー",
+    "異端のヤガ",
+    "花園の少女",
 
-    //星３礼装 22
+    //星３礼装 23
     "柳洞寺",
     "愛の霊薬",
     "ブロンズ・マニピュレーター",
@@ -403,4 +422,5 @@ typedef enum {
     "神造兵装",
     "魂喰い",
     "叡智の光",
+    "桜の特製弁当",
 };

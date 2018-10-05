@@ -59,8 +59,8 @@ int main(void)
             }
             else if (probability <= haisyutu[1]) //星４鯖の排出処理
             {
-                int min = 25,max = 72;
-                nameselectfor = GetRandom(min, max); //星４鯖の個別選択 26~76
+                int min = 26,max = 79;
+                nameselectfor = GetRandom(min, max); //星４鯖の個別選択 26~79
                 printf("  星４鯖　　 %s\n", GetServantName(nameselectfor));
                 confirms = confirms + 1;
                 confirm = confirm + 1;
@@ -68,8 +68,8 @@ int main(void)
             }
             else if (probability <= haisyutu[2]) //星５礼装の排出処理
             {
-                int min = 110, max = 127;
-                nameselectfiver = GetRandom(min, max); //星５礼装の個別選択 114~133
+                int min = 117, max = 135;
+                nameselectfiver = GetRandom(min, max); //星５礼装の個別選択 117~135
                 printf("┏━━━━━━━━━━┓\n");
                 printf("┃ 星５礼装 ┃ %s\n", GetServantName(nameselectfiver));
                 printf("┗━━━━━━━━━━┛\n");
@@ -78,24 +78,24 @@ int main(void)
             }
             else if (probability <= haisyutu[3]) //星４礼装排出処理
             {
-                int min = 128, max = 153;
-                nameselectforr = GetRandom(min, max); //星４礼装の個別選択 133~159
+                int min = 135, max = 163;
+                nameselectforr = GetRandom(min, max); //星４礼装の個別選択 135~163
                 printf("  星４礼装　 %s\n", GetServantName(nameselectforr));
                 confirm = confirm + 1;
                 forblacktie = forblacktie + 1;
             }
             else if (probability <= haisyutu[4]) //星３鯖排出処理
             {
-                int min = 73,max = 109;
-                nameselectthree = GetRandom(min, max); //星３鯖の個別選択 77~113
+                int min = 79,max = 117;
+                nameselectthree = GetRandom(min, max); //星３鯖の個別選択 79~117
                 printf("  星３鯖　　 %s\n", GetServantName(nameselectthree));
                 confirms = confirms + 1;
                 sabathree = sabathree + 1;
             }
             else if (probability <= haisyutu[5]) //星３礼装排出処理
             {
-                int min = 154, max = 175;
-                nameselectthreer = GetRandom(min, max); //星３礼装の個別選択 159~181
+                int min = 163, max = 185;
+                nameselectthreer = GetRandom(min, max); //星３礼装の個別選択 163~185
                 printf("  星３礼装　 %s\n", GetServantName(nameselectthreer));
                 threeblacktie = threeblacktie + 1;
             }
