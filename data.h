@@ -1,5 +1,5 @@
 typedef enum {
-    //星５鯖 25
+    //星５鯖 26
     eRANK_FIVE_SERVANT_BEGIN = 0,
     eRANK_FIVE_SERVANT_ALTRIAPENDRAGON = eRANK_FIVE_SERVANT_BEGIN,
     eRANK_FIVE_SERVANT_MODERED,
@@ -7,6 +7,7 @@ typedef enum {
     eRANK_FIVE_SERVANT_ORION,
     eRANK_FIVE_SERVANT_NICOLATESLA,
     eRANK_FIVE_SERVANT_ARJUNA,
+    eRANK_FIVE_SERVANT_NAPOREON,
     eRANK_FIVE_SERVANT_CARNA,
     eRANK_FIVE_SERVANT_ELKIDOO,
     eRANK_FIVE_SERVANT_ALTRIAPENDRAGON_LANCER,
@@ -29,7 +30,7 @@ typedef enum {
     eRANK_FIVE_SERVANT_END,
     eRANK_FIVE_SERVANT_MAX = eRANK_FIVE_SERVANT_END,
 
-    //星４鯖 48
+    //星４鯖 50
     eRANK_FOR_SERVANT_BEGIN = eRANK_FIVE_SERVANT_MAX,
     eRANK_FOR_SERVANT_ALTRIAPENDRAGONORUTA = eRANK_FOR_SERVANT_BEGIN,
     eRANK_FOR_SERVANT_NRO,
@@ -39,6 +40,7 @@ typedef enum {
     eRANK_FOR_SERVANT_RANSROT,
     eRANK_FOR_SERVANT_SYUBARIE,
     eRANK_FOR_SERVANT_SUZUKA,
+    eRANK_FOR_SERVANT_DEXIRUMUDDO,
     eRANK_FOR_SERVANT_EMIYA,
     eRANK_FOR_SERVANT_ATARANTE,
     eRANK_FOR_SERVANT_TORISTAN,
@@ -52,6 +54,7 @@ typedef enum {
     eRANK_FOR_SERVANT_MEDUSA,
     eRANK_FOR_SERVANT_PEARL_VERTY,
     eRANK_FOR_SERVANT_NATA,
+    eRANK_FOR_SERVANT_WARUKYURE,
     eRANK_FOR_SERVANT_ASTOLPHO,
     eRANK_FOR_SERVANT_ANN_BONNIE_MARY_LEAD,
     eRANK_FOR_SERVANT_MARIE_ANTOINETTE,
@@ -124,7 +127,7 @@ typedef enum {
     eRANK_THREE_SERVANT_END,
     eRANK_THREE_SERVANT_MAX = eRANK_THREE_SERVANT_END - eRANK_THREE_SERVANT_BEGIN,
 
-    //星５礼装　18
+    //星５礼装　19
     eRANK_FIVE_REISOU_BEGIN = eRANK_THREE_SERVANT_END,
     eRANK_FIVE_REISOU_FORMAL_CRAFT = eRANK_FIVE_REISOU_BEGIN,
     eRANK_FIVE_REISOU_IMAGINARY_AROUND,
@@ -144,6 +147,7 @@ typedef enum {
     eRANK_FIVE_REISOU_ORIGIN_BULLET,
     eRANK_FIVE_REISOU_MAGICAL_BODHISATTVA,
     eRANK_FIVE_REISOU_IN_THE_SUNNY_POOL,
+    eRANK_FIVE_REISOU_IN_THE_SUNNY_ATORASU,
     eRANK_FIVE_REISOU_END,
     eRANK_FIVE_REISOU_MAX = eRANK_FIVE_REISOU_END - eRANK_FIVE_REISOU_BEGIN,
 
@@ -208,13 +212,14 @@ typedef enum {
 } eRANK_TYPE;
 
  const char* strServantNames [] = {
-    //星５鯖 25
+    //星５鯖 26
     "アルトリア・ペンドラゴン",
     "モードレッド",
     "アルテラ",
     "オリオン",
     "ニコラ・テスラ",
     "アルジュナ",
+    "ナポレオン",
     "カルナ",
     "エルキドゥ",
     "アルトリア・ペンドラゴン[ランサー]",
@@ -235,7 +240,7 @@ typedef enum {
     "クー・フーリン[オルタ]",
     "ジャンヌ・ダルク",
 
-    //星４鯖 48
+    //星４鯖 50
     "アルトリア・ペンドラゴン[オルタ]",
     "ネロ・クラウディウス",
     "ガウェイン",
@@ -244,6 +249,7 @@ typedef enum {
     "ランスロット",
     "シュヴァリエ・デオン",
     "鈴鹿御前",
+    "ディルムッド・オディナ[セイバー]",
     "エミヤ",
     "アタランテ",
     "トリスタン",
@@ -257,6 +263,7 @@ typedef enum {
     "メドゥーサ",
     "パールヴァティー",
     "哪吒",
+    "ワルキューレ",
     "アストルフォ",
     "アン・ボニー＆メアリー・リード",
     "マリー・アントワネット",
@@ -324,7 +331,7 @@ typedef enum {
     "ダレイオス三世",
     "清姫",
 
-    //星５礼装 18
+    //星５礼装 19
     "フォーマルクラフト",
     "イマジナリ・アラウンド",
     "リミテッド・ゼロオーバー",
@@ -343,6 +350,7 @@ typedef enum {
     "起源弾",
     "魔性菩薩",
     "陽だまりの中で",
+    "アトラスの嬰児",
 
     //星４礼装 26
     "鋼の鍛錬",
